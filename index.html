@@ -1,5 +1,45 @@
-<h>
-  I can't disappear
-  watched, yet helped in other ways
-  I want control back
-</h>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staggered Content</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('glitch1.avif');
+    background-size: cover;
+    background-position: center; 
+  }
+  .content {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 4.5;
+    color: #0f0; 
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0; 
+    padding: 20px; 
+    border-radius: 10px; 
+  }
+  .content p {
+    text-align: left;
+    margin: 10px;
+  }
+  .content .staggered-line {
+    text-align: right; 
+    margin-top: 40px; /* Adding margin to stagger the line */
+  }
+</style>
+</head>
+<body>
+<div class="content">
+  <p>I can't disappear</p>
+  <p class="staggered-line">watched, yet helped in other ways</p>
+  <p><a href="https://sofhaf.github.io/blood/" target="_blank">I want control back</a></p>
+</div>
+</body>
+</html>
